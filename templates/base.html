@@ -57,7 +57,6 @@
     {% if settings.SITE_TITLE %}<a class="brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
     {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
     <div class="nav-collapse collapse">
-        {% search_form "all" %}
         {% page_menu "pages/menus/dropdown.html" %}
     </div>
 </div>
@@ -86,32 +85,12 @@
 </div>
 
 <div class="container">
-<div class="row">
-
-<div class="span2 left">
-    {% block left_panel %}
-    <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
-    {% endblock %}
-</div>
-
-<div class="span7 middle">
-    {% block main %}{% endblock %}
-</div>
-
-<div class="span3 right">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <div class="panel">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
+    <div class="row">
+        <div class="span10 middle">
+            {% block main %}
+            {% endblock %}
+        </div>
     </div>
-</div>
-
-</div>
 </div>
 
 <footer>
