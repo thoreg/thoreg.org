@@ -240,7 +240,11 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
+    "redactor",
 )
+
+REDACTOR_OPTIONS = {'lang': 'en'}
+REDACTOR_UPLOAD = 'uploads/'
 
 # List of processors used by RequestContext to populate the context.
 # Each one should be a callable that takes the request object as its
