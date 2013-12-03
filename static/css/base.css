@@ -1,3 +1,8 @@
 body {
     font-family: monospace;
 }
+
+.social_media_icon {
+    box-shadow: none;
+    height: 66px;
+}
