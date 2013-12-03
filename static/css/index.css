@@ -1,0 +1,11 @@
+
+.centered_vertical_and_horizontal {
+    line-height: 500px;
+    min-height: 500px;
+    text-align: center;
+
+}
+
+.page_header {
+    display: none;
+}
