@@ -4,6 +4,8 @@ import sys
 
 paths = [
     '/srv/w3/',
+    '/srv/venvs/thoreg.org/lib/python2.6',
+    '/srv/venvs/thoreg.org/lib/python2.6/site-packages/'
 ]
 for path in paths:
     if path not in sys.path:
