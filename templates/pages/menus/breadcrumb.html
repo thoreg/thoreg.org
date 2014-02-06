@@ -1,8 +1,5 @@
 {% load i18n future pages_tags %}
 
-{% if on_home %}
-<li>{% trans "Home" %}</li>
-{% else %}
 {% for page in page_branch %}
 
     {% if not has_home and page.is_primary and forloop.first %}
@@ -26,4 +23,3 @@
     {% endif %}
 
 {% endfor %}
-{% endif %}
