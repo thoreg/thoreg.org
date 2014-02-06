@@ -10,3 +10,8 @@ body {
 h2 {
     font-size: 1em;
 }
+
+a.read-more:after {
+    content: "\00A0\000BB";
+    font-size: 1.5em;
+}
